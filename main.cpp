@@ -6,6 +6,6 @@ int main(){
     //taking input using cin identifiers
     cin >> age;
     cout << "your age is :" << age << endl;
-
+  
     return 0;
 }

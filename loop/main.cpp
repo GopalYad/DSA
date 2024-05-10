@@ -1,31 +1,31 @@
 #include <iostream>
 using namespace std;
 int main(){
-    for (int i = 0 ; i <= 10; i=i+1){
-        cout << "hello ji" << endl ;
-    }
+    // for (int i = 0 ; i <= 10; i=i+1){
+    //     cout << "hello ji" << endl ;
+    // }
 
 
-    for(int i = 0; i<=5; i++){
-        if(i==3){
-            break;  //will stop after 3.
-        }
-           cout << i << " ";
-    }
+    // for(int i = 0; i<=5; i++){
+    //     if(i==3){
+    //         break;  //will stop after 3.
+    //     }
+    //        cout << i << " ";
+    // }
 
-    for(int i = 0 ; i<=5; i++){
-        if(i== 4){
+    // for(int i = 0 ; i<=5; i++){
+    //     if(i== 4){
            
-            continue; //only skip 4.
-        }
-          cout << i << " ";
-    }
+    //         continue; //only skip 4.
+    //     }
+    //       cout << i << " ";
+    // }
 
-    int i =1;
-    while(i<=5){
-        cout << i << " ";
-        i++;
-    }
+    // int i =1;
+    // while(i<=5){
+    //     cout << i << " ";
+    //     i++;
+    // }
 
     ///it will run upto infinity
     ///until you didn't statisfies  all the values
@@ -74,16 +74,33 @@ int main(){
 
 
       
-     for(int i = 3 ; i ; i--){
-        cout << i << " ";   //print  3 2 1
-     }
+    //  for(int i = 3 ; i ; i--){
+    //     cout << i << " ";   //print  3 2 1
+    //  }
 
-     for( int i = 3 ; i-- ; ){
-      cout << i << " ";     //print 2 1 0
-     }
-    return 0;
+    //  for( int i = 3 ; i-- ; ){
+    //   cout << i << " ";     //print 2 1 0
+    //  }
+ 
     
-    for(int i = 1 ; i++<=3 ; i++){   
-        cout << i << " " ;
-    }
+    // for(int i = 1 ; i++<=3 ; i++){   
+    //     cout << i << " " ;
+    // }
+    // int l = 1;
+    // do{
+    // cout << l << " ";
+    // l++;
+    // }while(l<= 10);
+
+    // int h ;
+    // if(cin >> h){
+    //     cout << "Gopal";
+    // }
+
+    // if(cout <<"hi"){
+    //     cout << "Gopal";
+    // }
+
+
+   return 0;
 }

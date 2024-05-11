@@ -154,30 +154,71 @@ int main(){
 //    * * * * *
 //      * * *
 //        *
-     for(int row = 0 ; row < n ; row++)
-   {
-    for(int col = 0; col <n-row;col++)
-    {
-        cout << "  ";
-    }
-    for(int col = 0; col <2*row+1;col++)
-    {
-        cout << "* ";
-    }
-    cout <<endl;
-   }
+//      for(int row = 0 ; row < n ; row++)
+//    {
+//     for(int col = 0; col <n-row;col++)
+//     {
+//         cout << "  ";
+//     }
+//     for(int col = 0; col <2*row+1;col++)
+//     {
+//         cout << "* ";
+//     }
+//     cout <<endl;
+//    }
 
-   for(int row = 0 ; row < n ; row++)
-   {
-    for(int col = 0; col <row;col++)
+//    for(int row = 0 ; row < n ; row++)
+//    {
+//     for(int col = 0; col <row;col++)
+//     {
+//         cout << "  ";
+//     }
+//     for(int col = 0; col <2*n-2*row -1;col++)
+//     {
+//         cout << "* ";
+//     }
+//     cout <<endl;
+//    }
+
+
+  //half alpha-numeric pyramid
+
+//  A
+// ABA
+// ABCBA
+// ABCDCBA
+// ABCDEDCBA
+//    for(int row= 0 ; row <n; row++)
+//    {
+//       char ch;
+//     for(int col =0; col < row+1; col++)
+//     {
+//          ch = col +1 + 'A'-1;
+//         cout <<ch;
+//     }
+//     for(char alphabet = ch; alphabet>'A'; )
+//     {
+//          alphabet = alphabet-1;
+//         cout <<alphabet;
+//     }
+//     cout <<endl;
+//    }
+
+    
+
+    for(int row = 0; row < n; row++)
     {
-        cout << "  ";
+        for(int col = 0; col < n-row-1; col++)
+        {
+            cout << "_";
+        }
+        int changeNum = row+1;
+        for(int col =changeNum ; col >0; col--)
+        {
+            cout << changeNum;
+        }
+       
+        cout <<endl;
     }
-    for(int col = 0; col <2*n-2*row -1;col++)
-    {
-        cout << "* ";
-    }
-    cout <<endl;
-   }
     return 0;
 }

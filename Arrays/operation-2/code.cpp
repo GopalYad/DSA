@@ -59,7 +59,17 @@ int print (int arr[], int n){
         cout << arr[i] << " ";
     }
 }
-
+void checkThreeSum(int nums[], int n , int target){
+    for(int i = 0 ; i < n ; i++){
+        for(int j = i+1 ; j < n; j++){
+            for(int k = j+1 ; k< n; k++){
+                if(nums[i]+nums[j]+nums[k] == target){
+             cout << nums[i] <<", "<<nums[j]<<", "<<nums[k];
+                }
+            }
+        }
+    }
+}
 
 int main(){
   
@@ -76,7 +86,7 @@ int main(){
   int nums[] = {10,20,30,40};
   int len = 4;
   printAllPairs(nums,len);
-
+  checkThreeSum(nums,len,70);
 
 
     return 0;

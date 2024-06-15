@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
   vector<int> twoSum(vector<int>& nums, int target) {
       //step1. intiilize ans vector for indices
@@ -20,9 +22,32 @@ using namespace std;
       ///return ans
       return ans;
     }
+
+    /// key pairs solution 
+    	bool hasArrayTwoCandidates(int arr[], int n, int target) {
+	    // code here
+	    //steo1.sort the array
+	    sort(arr,arr+n);
+	  int l = 0 ;
+	  int h = n -1;
+	  while(l < h){
+	      if(arr[l]+ arr[h]==target){
+	          return true;
+	      }
+	      if(arr[l]+ arr[h]>target){
+	          h--;
+	      }
+	      if(arr[l]+ arr[h]<target){
+	          l++;
+	      }
+	  }
+	  return false;
+	} 
+
+
     int main(){
      // Define a vector of integers and a target value
-    vector<int> nums = {2, 7, 11, 15};
+    vector<int>nums = {2, 7, 11, 15};
     int target = 9;
 
     // Call the twoSum function
@@ -36,7 +61,11 @@ using namespace std;
     cout << endl;
 
     
-
+    int arr[] = {10,20,30,40,50};
+    int x = 70;
+    int n = 5;
+    bool ans = hasArrayTwoCandidates(arr, n,x);
+    cout << "key pairs has :"<<ans<<endl;
 
 
 

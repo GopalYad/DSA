@@ -44,6 +44,24 @@ using namespace std;
 	  return false;
 	} 
 
+    int pivotIndex(vector<int>& nums) {
+     for(int i = 0 ; i < nums.size(); i++) {
+        int lSum =0 ;
+        int rSum = 0;
+        for( int j = 0 ; j < i ; j++){
+            lSum += nums[j];
+        } 
+        cout<<lSum;
+        for(int  j = i+1 ; j < nums.size() ; j++){
+            rSum +=nums[j];
+        }
+        if(lSum == rSum){
+            return i;
+        }
+     }
+     return -1;
+    }
+
 
     int main(){
      // Define a vector of integers and a target value
@@ -67,7 +85,15 @@ using namespace std;
     bool ans = hasArrayTwoCandidates(arr, n,x);
     cout << "key pairs has :"<<ans<<endl;
 
+   
 
+   ///find pivot index
+   vector<int>arr1 ={1,7,3,6,5,6};
+   vector<int>res = pivotIndex(arr1);
+   for(int ind : res) {
+        cout << ind << " ";
+    }
+    cout << endl;
 
 
 

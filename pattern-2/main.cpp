@@ -206,19 +206,48 @@ int main(){
 
     
 
-    for(int row = 0; row < n; row++)
-    {
-        for(int col = 0; col < n-row-1; col++)
-        {
-            cout << "_";
-        }
-        int changeNum = row+1;
-        for(int col =changeNum ; col >0; col--)
-        {
-            cout << changeNum;
-        }
+    // for(int row = 0; row < n; row++)
+    // {
+    //     for(int col = 0; col < n-row-1; col++)
+    //     {
+    //         cout << "_";
+    //     }
+        
+    //     int changeNum = row+1;
+    //     for(int col = 0; col <changeNum ; col++)
+    //     {
+    //         cout <<col+1;
+    //     }
+    //     for(int col =changeNum ; col >0; col--)
+    //     {
+    //         cout << changeNum;
+    //     }
        
-        cout <<endl;
-    }
+    //     cout <<endl;
+    // }
+
+
+    // for(int row = 0; row < n; row++)
+    // {
+    //     for(int col = 0; col < n-row-1 ; col++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     char ch = 'A'-1;
+    //     for(int col = 0; col < row+1; col++)
+    //     {
+    //         ch = ch+1;
+    //         cout <<ch << " ";
+    //     }
+
+    //     for(int col = ch; col >'A'-1; )
+    //     {
+    //         col--
+    //         cout <<ch << " ";
+    //     }
+    //     cout <<endl;
+    // }
+
+
     return 0;
 }

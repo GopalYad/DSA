@@ -6,6 +6,8 @@ int decimalToBinary(int n){
     int i =0 ;
     while(n > 0){
         int bit = n % 2;
+  
+        
         binary = binary + bit*pow(10,i++);
         n = n / 2; 
     }

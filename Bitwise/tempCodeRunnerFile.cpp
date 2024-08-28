@@ -1,0 +1,1 @@
+ cout << binaryToDecimal(binaryno)<<endl;
